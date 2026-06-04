@@ -1,3 +1,4 @@
 select * from
-{{ ref('my_second_dbt_model') }}
+{{ source('demo1', 'bike') }}
 
+limit 10
