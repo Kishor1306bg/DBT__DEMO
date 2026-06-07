@@ -1,3 +1,14 @@
 select * from
-{{ source('demo1', 'bike') }}
+{{ ref('bike') }}
+
+
+
+
+
+
+
+
+
+
+
 
