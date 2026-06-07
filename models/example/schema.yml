@@ -2,10 +2,8 @@
 version: 2
 
 models:
-    - name: bike
-      description: "bike details"
-      
+  - name: bike
+    description: "bike details"
 
-    - name: weather
-      description: "weather details"
-     
+  - name: weather
+    description: "weather details"
