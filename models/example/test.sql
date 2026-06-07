@@ -1,5 +1,5 @@
 select * from
-{{ ref('bike') }}
+{{ source('demo1', 'bike') }}
 
 
 
