@@ -7,6 +7,13 @@ end
 {% endmacro %}
 
 
+{% macro function3(p) %}
+CASE WHEN DAYNAME(TO_TIMESTAMP({{p}})) IN ('Sat','Sun')
+then 'WEEKEND'
+ELSE 'BUSINESSDAY'
+END 
+{% endmacro %}
+
 {% macro function2(y) %}
 CASE 
 WHEN MONTH(TO_TIMESTAMP({{y}})) IN (12,1,2)

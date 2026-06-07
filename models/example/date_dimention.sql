@@ -7,6 +7,8 @@ HOUR(TO_TIMESTAMP(STARTED_AT)) AS HOUR_STARED_AT,
 
 {{function2('started_at')}} as Season,
 
+{{function3('started_at')}} as day_type,
+
 {{function1('started_at')}} as new
 FROM
 {{ source('demo1', 'bike') }}
