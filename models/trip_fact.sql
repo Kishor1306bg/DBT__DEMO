@@ -11,6 +11,5 @@ FROM
 {{ source('demo1', 'bike') }}
 where RIDE_ID != 'ride_id'
 
-
 )
 select * from TRIPS
